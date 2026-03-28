@@ -10,51 +10,96 @@
 <body>
 
 <nav>
-<a href="#home">Accueil</a>
-<a href="#exp">Expériences</a>
-<a href="#hobby">Hobby</a>
-<a href="#contact">Contact</a>
+<a href="#home" data-fr="Accueil" data-en="Home">Accueil</a>
+<a href="#exp" data-fr="Expériences" data-en="Experience">Expériences</a>
+<a href="#hobby" data-fr="Hobby" data-en="Hobbies">Hobby</a>
+<a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+
+<button onclick="toggleLanguage()" id="lang-btn">EN</button>
 </nav>
 
 <!-- HOME -->
 <section id="home">
 <div class="text">
-<h1>Bonjour, je suis Romain ELENA</h1>
-<p>Étudiant en 3ème année de Réseau & Télécommunications à l'IUT de Luminy à Marseille.</p>
-<p></p>
-<p>Au cours de ces dernières années j'ai acquis des connaissance en réseau, mais j'ai surtout développé un interet pour les Datacenters, vous pourez en savoir plus en visitant ce site !</p>
+<h1 data-fr="Bonjour, je suis Romain ELENA"
+    data-en="Hello, I'm Romain ELENA">
+Bonjour, je suis Romain ELENA
+</h1>
+
+<p data-fr="Étudiant en 3ème année de Réseau & Télécommunications à l'IUT de Luminy à Marseille."
+   data-en="3rd year student in Network & Telecommunications at IUT Luminy in Marseille.">
+Étudiant en 3ème année...
+</p>
+
+<p data-fr="Au cours de ces dernières années j'ai acquis des connaissances en réseau, mais j'ai surtout développé un intérêt pour les Datacenters. Vous pourrez en savoir plus en visitant ce site !"
+   data-en="Over the past few years, I have gained knowledge in networking, but I have especially developed a strong interest in Datacenters. You can learn more by exploring this site!">
+...
+</p>
 </div>
 <img src="photo.jpg" alt="photo">
 </section>
 
 <!-- EXPERIENCES -->
 <section id="exp">
-<h2>Expériences</h2>
+<h2 data-fr="Expériences" data-en="Experience">Expériences</h2>
 
 <div class="card big">
 <img src="intermarche.png">
 <div>
-<h3>Employé Polyvalent - Intermarché</h3>
-<p>Juillet 2024 - Août 2024 | Marignane</p>
-<p>Premier travail saisonnié. Cet expérience m'a appris la relation client, tenir des délai stricte, l'importance de la ponctualité profesionnelle et des compétences spécifique à ce travail: Préparation des commandes DRIVE, Réaprovisionnement & Rangement des rayons.</p>
+<h3 data-fr="Employé Polyvalent - Intermarché"
+    data-en="Multi-skilled Employee - Intermarché">
+Employé Polyvalent - Intermarché
+</h3>
+
+<p data-fr="Juillet 2024 - Août 2024 | Marignane"
+   data-en="July 2024 - August 2024 | Marignane">
+Juillet 2024...
+</p>
+
+<p data-fr="Premier travail saisonnier. Cette expérience m'a appris la relation client, le respect des délais stricts, la ponctualité et des compétences spécifiques comme la préparation de commandes, le réapprovisionnement et l'organisation."
+   data-en="First seasonal job. This experience taught me customer relations, meeting strict deadlines, punctuality, and job-specific skills such as order preparation, restocking and organization.">
+...
+</p>
 </div>
 </div>
 
 <div class="card big">
 <img src="microsoft.png">
 <div>
-<h3>Stage - Microsoft France</h3>
-<p>Avril 2025 - Juin 2025 | Marseille</p>
-<p>Découverte des infrastructures data center et maintenance technique. Ce stage m'a fait découvrir un nouveau monde, m'a permis de mettre en avant les compétences apprise pendant mes cours et déveloper un interet pour les Data Center et leur importance pour le monde dans lequel nous vivons.</p>
+<h3 data-fr="Stage - Microsoft France"
+    data-en="Internship - Microsoft France">
+Stage - Microsoft France
+</h3>
+
+<p data-fr="Avril 2025 - Juin 2025 | Marseille"
+   data-en="April 2025 - June 2025 | Marseille">
+Avril 2025...
+</p>
+
+<p data-fr="Découverte des infrastructures data center et maintenance technique. Ce stage m'a permis d'appliquer mes compétences et de développer un fort intérêt pour les data centers."
+   data-en="Discovery of datacenter infrastructures and technical maintenance. This internship allowed me to apply my skills and develop a strong interest in datacenters.">
+...
+</p>
 </div>
 </div>
 
 <div class="card big">
 <img src="microsoft.png">
 <div>
-<h3>Alternance - Microsoft France</h3>
-<p>Septembre 2025 - Aujourd'hui | Marseille</p>
-<p>Gestion d'infrastructure, supervision et intervention technique en environnement critique.</p>
+<h3 data-fr="Alternance - Microsoft France"
+    data-en="Apprenticeship - Microsoft France">
+Alternance - Microsoft France
+</h3>
+
+<p data-fr="Septembre 2025 - Aujourd'hui | Marseille"
+   data-en="September 2025 - Present | Marseille">
+Septembre 2025...
+</p>
+
+<p data-fr="Gestion d'infrastructure, supervision et intervention technique en environnement critique."
+   data-en="Infrastructure management, monitoring and technical intervention in critical environments.">
+...
+</p>
 </div>
 </div>
 
@@ -62,28 +107,32 @@
 
 <!-- HOBBY -->
 <section id="hobby">
-<h2>Hobby</h2>
+<h2 data-fr="Hobby" data-en="Hobbies">Hobby</h2>
 
 <div class="hobby-grid">
 
 <div class="hobby big" onclick="showSection('dessin')">
-<h3>Dessin</h3>
+<h3 data-fr="Dessin" data-en="Drawing">Dessin</h3>
 </div>
 
 <div class="hobby big" onclick="showSection('jeux')">
-<h3>Jeux Vidéos</h3>
+<h3 data-fr="Jeux Vidéos" data-en="Video Games">Jeux Vidéos</h3>
 </div>
 
 <div class="hobby big" onclick="showSection('sport')">
-<h3>Sports</h3>
+<h3 data-fr="Sports" data-en="Sports">Sports</h3>
 </div>
 
 </div>
 
 <!-- DESSIN -->
 <div id="dessin" class="content-section">
-<h3 class="center">Dessin</h3>
-<p class="center">Le dessin me permet de développer ma créativité, lorsque je cherche à occupé mon esprit je sort ma tablette graphique et dessine dans l'univers que j'aime.</p>
+<h3 class="center" data-fr="Dessin" data-en="Drawing">Dessin</h3>
+
+<p class="center"
+data-fr="Le dessin me permet de développer ma créativité. Lorsque je veux me détendre, je prends ma tablette graphique et je dessine."
+data-en="Drawing allows me to develop my creativity. When I want to relax, I use my graphic tablet and draw.">
+</p>
 
 <div class="gallery">
 <img src="dessins/dessin1.png" onclick="openModal(this.src)">
@@ -99,25 +148,25 @@
 
 <!-- JEUX -->
 <div id="jeux" class="content-section">
-<h3 class="center">Jeux Vidéos</h3>
+<h3 class="center" data-fr="Jeux Vidéos" data-en="Video Games">Jeux Vidéos</h3>
 
 <div class="gallery">
-<img src="jeux_videos/ow.png" onclick="openGame('Overwatch','Jeu de tir en équipe dynamique.')">
-<img src="jeux_videos/lol.png" onclick="openGame('League of Legends','Jeu qui développe beaucoup le travail en équipe, tout comme Overwatch.')">
-<img src="jeux_videos/vrchat.png" onclick="openGame('VRChat','Expérience sociale immersive. Jeu dans lequel j ai fait de belles rencontres qui ce sont fini en rencontre dans la vraie vie.')">
-<img src="jeux_videos/beatsaber.jpg" onclick="openGame('Beat Saber','Jeu de rythme en VR. Probablement mon préféré, il me permet de faire du sport et m amuser. Je me suis beaucoup investi sur ce jeu, puisque j ai été top 40 France sur le leader board ScoreSaber, le plus réputé et répendu dans la communauté compététitive.')">
-<img src="jeux_videos/dancedash.png" onclick="openGame('Dance Dash','Jeu de danse.')">
+<img src="jeux_videos/ow.png" onclick="openGame('Overwatch','Dynamic team-based shooter.')">
+<img src="jeux_videos/lol.png" onclick="openGame('League of Legends','A game that strongly develops teamwork skills.')">
+<img src="jeux_videos/vrchat.png" onclick="openGame('VRChat','Immersive social experience where I met great people.')">
+<img src="jeux_videos/beatsaber.jpg" onclick="openGame('Beat Saber','VR rhythm game and my favorite. I reached top 40 France on ScoreSaber leaderboard.')">
+<img src="jeux_videos/dancedash.png" onclick="openGame('Dance Dash','Dance game.')">
 </div>
 </div>
 
 <!-- SPORTS -->
 <div id="sport" class="content-section">
-<h3 class="center">Sports</h3>
+<h3 class="center" data-fr="Sports" data-en="Sports">Sports</h3>
 
 <div class="gallery">
-<img src="sports/velo.jpg" onclick="openGame('Vélo','TBE')">
-<img src="sports/onewheel.jpg" onclick="openGame('Onewheel','J ai découvert le Onewheel en 2024, depuis, le Onewheel est devenu mon nouveau moyen de déplacement doux, mais plus que ça, c est aussi devenu un sport qui m a fait rencontré des passionné, m a donné gout au travail manuel (modifications de pièces éléctronique) mais aussi un moyens de décompresser et profiter du paysage !')">
-<img src="sports/tir.png" onclick="openGame('Tir à l’arc','Sport que j ai pratiqué pendant mon adolescence.')">
+<img src="sports/velo.jpg" onclick="openGame('Cycling','Outdoor activity and relaxation.')">
+<img src="sports/onewheel.jpg" onclick="openGame('Onewheel','A fun and eco-friendly way to move, but also a passion and technical hobby.')">
+<img src="sports/tir.png" onclick="openGame('Archery','Sport I practiced during my teenage years.')">
 </div>
 </div>
 
@@ -136,16 +185,40 @@
 
 <!-- CONTACT -->
 <section id="contact">
-<h2>Contact</h2>
-<p>Mon profil vous interesse ? Vous pouvez me contacter sur Linked In, ou par mail !</p>
+<h2 data-fr="Contact" data-en="Contact">Contact</h2>
+
+<p data-fr="Mon profil vous intéresse ? Vous pouvez me contacter sur LinkedIn ou par mail !"
+   data-en="Interested in my profile? You can contact me via LinkedIn or email!">
+</p>
+
 <p>LinkedIn: https://www.linkedin.com/in/romain-elena/</p>
 <p>Email : romainsappeelena@gmail.com</p>
-<p></p>
-<p>Vous pouvez également télécharger mon CV en cliquant ici :</p>
+
+<p data-fr="Vous pouvez également télécharger mon CV en cliquant ici :"
+   data-en="You can also download my CV here:">
+</p>
+
 <a href="cv.pdf" download>
-<button>Télécharger mon CV</button>
+<button data-fr="Télécharger mon CV" data-en="Download my CV">
+Télécharger mon CV
+</button>
 </a>
+
 </section>
+
+<script>
+let currentLang = "fr";
+
+function toggleLanguage() {
+    currentLang = currentLang === "fr" ? "en" : "fr";
+
+    document.querySelectorAll("[data-fr]").forEach(el => {
+        el.textContent = el.getAttribute("data-" + currentLang);
+    });
+
+    document.getElementById("lang-btn").textContent = currentLang === "fr" ? "EN" : "FR";
+}
+</script>
 
 <script src="script.js"></script>
 
