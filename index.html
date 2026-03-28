@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+<a href="#home">Accueil</a>
+<a href="#exp">Expériences</a>
+<a href="#hobby">Hobby</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+<div class="text">
+<h1>Bonjour, je suis [Ton Nom]</h1>
+<p>Étudiant en Réseau & Télécommunications passionné par les infrastructures IT et les data centers.</p>
+</div>
+<img src="photo.jpg" alt="photo">
+</section>
+
+<!-- EXPERIENCES -->
+<section id="exp">
+<h2>Expériences</h2>
+
+<div class="card big">
+<img src="intermarche.jpg">
+<div>
+<h3>Employé Polyvalent - Intermarché</h3>
+<p>Travail en équipe, gestion du stress et sens du service client.</p>
+</div>
+</div>
+
+<div class="card big">
+<img src="microsoft.jpg">
+<div>
+<h3>Stage - Microsoft France</h3>
+<p>Découverte des infrastructures data center et maintenance technique.</p>
+</div>
+</div>
+
+<div class="card big">
+<img src="microsoft.jpg">
+<div>
+<h3>Alternance - Microsoft France</h3>
+<p>Gestion d'infrastructure, supervision et intervention technique en environnement critique.</p>
+</div>
+</div>
+
+</section>
+
+<!-- HOBBY -->
+<section id="hobby">
+<h2>Hobby</h2>
+
+<div class="hobby-grid">
+
+<div class="hobby big" onclick="showSection('dessin')">
+<h3>Dessin</h3>
+</div>
+
+<div class="hobby big" onclick="showSection('jeux')">
+<h3>Jeux Vidéos</h3>
+</div>
+
+<div class="hobby big" onclick="showSection('sport')">
+<h3>Sports</h3>
+</div>
+
+</div>
+
+<!-- DESSIN -->
+<div id="dessin" class="content-section">
+<h3 class="center">Dessin</h3>
+<p class="center">Le dessin me permet de développer ma créativité et ma patience.</p>
+
+<div class="gallery">
+<img src="dessin1.jpg" onclick="openModal(this.src)">
+<img src="dessin2.jpg" onclick="openModal(this.src)">
+</div>
+</div>
+
+<!-- JEUX -->
+<div id="jeux" class="content-section">
+<h3 class="center">Jeux Vidéos</h3>
+
+<div class="gallery">
+<img src="ow.jpg" onclick="openGame('Overwatch','Jeu de tir en équipe dynamique.')">
+<img src="lol.jpg" onclick="openGame('League of Legends','Jeu stratégique en équipe.')">
+<img src="vrchat.jpg" onclick="openGame('VRChat','Expérience sociale immersive.')">
+<img src="beatsaber.jpg" onclick="openGame('Beat Saber','Jeu de rythme en VR.')">
+<img src="dancedash.jpg" onclick="openGame('Dance Dash','Jeu de rythme rapide.')">
+</div>
+</div>
+
+<!-- SPORTS -->
+<div id="sport" class="content-section">
+<h3 class="center">Sports</h3>
+
+<div class="gallery">
+<img src="velo.jpg" onclick="openGame('Vélo','Sport d’endurance.')">
+<img src="onewheel.jpg" onclick="openGame('Onewheel','Glisse électrique.')">
+<img src="tir.jpg" onclick="openGame('Tir à l’arc','Précision et concentration.')">
+</div>
+</div>
+
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal" onclick="this.style.display='none'">
+<div class="modal-content">
+<img id="modal-img">
+<div>
+<h2 id="modal-title"></h2>
+<p id="modal-text"></p>
+</div>
+</div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+<p>Email : tonmail@email.com</p>
+<a href="cv.pdf" download>
+<button>Télécharger mon CV</button>
+</a>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
